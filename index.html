@@ -9,38 +9,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="main.css">
-
     </head>
     <body>
+        <div id="page-top">
         <nav id="navbar">
             <ul id="nav-ul">
-                <li id="about" class="nav-li">
-                    About/Contact    
-                </li>
-                <li id="education" class="nav-li">
-                    Education            
-                </li>
-                <li id="skills" class="nav-li">
-                   Skills   
-                </li>
-                <li id="projects" class="nav-li">
-                    Projects
-                </li>
+                <a href="#">
+                    <li id="about" class="nav-li">
+                        About    
+                    </li>
+                </a>
+                <a href="#">
+                    <li id="education" class="nav-li">
+                        Education            
+                    </li>
+                </a>
+                <a href="#">
+                    <li id="skills" class="nav-li">
+                        Skills   
+                    </li>
+                </a>
+                <a href="#">
+                    <li id="projects" class="nav-li">
+                        Projects
+                    </li>
+                </a>
+                
             </ul>
         </nav>
-
         <div id="main-header">
-            <img src="images/helper.jpg" id="header-img">
+            <img src="images/helper.jpg" id="header-img" alt="Me and my cat assistant">
             <div id="header-txt">
                 <h3 id="full-name">Matthew Pittman</h3>
                 <h5 id="title">Full Stack Web Developer</h5>
                 <h6 id="contact"><p id="mail"><a href="mailto:someone@example.com">mattrpittman@gmail.com</a></p>  |  605-210-2242</h6>
             </div>
-            
         </div>
-
+    </div>
         <!-- Portfolio Content -->
-        <div id="content-all">
+        <div id="content-container">
             <div class="main">
                 <section id="about-sec" class="content">
                     <h4>About Me</h4>
@@ -60,9 +67,66 @@
                 <section id="projects-sec" class="content hidden">
                     <h4>Projects</h4>
                     <p>Vestibulum libero lectus, molestie a mi et, venenatis mollis ex. Vestibulum eget felis sed dolor ultricies consequat. Mauris pulvinar, augue at mattis commodo, ex felis elementum orci, et tempor sem eros sagittis est. Aenean euismod ut felis eu congue. Suspendisse ipsum massa, tincidunt non interdum a, fermentum vitae enim. Aenean interdum sem sed orci bibendum, ut porttitor dui dapibus.</p>   
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="card p-3 mb-2 bg-primary text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Weather Zip</h5> 
+                                    <p class="card-text">
+                                        This PHP based app uses the Open Weather API to look up weather conditions
+                                        by zip code. In addition it uses flexbox and Bootstrap to achieve a responsive design
+                                        for mobile and desktop users.
+                                    </p>
+                                    <a role="button" type="button" href="#" class="btn btn-success btn-lg btn-block">View Site</a>
+                                    <a role="button" type="button" href="#" class="btn btn-secondary btn-lg btn-block">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="card p-3 mb-2 bg-primary text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vue Currency</h5>
+                                    <p class="card-text">
+                                        A single page app that converts currencies.  Uses the Vue framework along with Bootstrap
+                                        and Ajax for API queries.
+                                    </p>
+                                    <a role="button" type="button" href="#" class="btn btn-success btn-lg btn-block">View Site</a>
+                                    <a role="button" type="button" href="#" class="btn btn-secondary btn-lg btn-block">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mb-3">
+                            <div class="card p-3 mb-2 bg-primary text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Python Projects</h5> 
+                                    <p class="card-text">
+                                        This PHP based app uses the Open Weather API to look up weather conditions
+                                        by zip code. In addition it uses flexbox and Bootstrap to achieve a responsive design
+                                        for mobile and desktop users.
+                                    </p>
+                                    <a role="button" type="button" href="#" class="btn btn-success btn-lg btn-block">View Site</a>
+                                    <a role="button" type="button" href="#" class="btn btn-secondary btn-lg btn-block">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-3">
+                            <div class="card p-3 mb-2 bg-primary text-white h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Portfolio Site</h5>
+                                    <p class="card-text">
+                                        The code for this site. HTML, CSS, Bootstrap and a bit of plain old Javascript.
+                                    </p>
+                                    <a role="button" type="button" href="#" class="btn btn-success btn-lg btn-block">View Site</a>
+                                    <a role="button" type="button" href="" class="btn btn-secondary btn-lg btn-block">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </section>
             </div>
-
         <script src="main.js" async defer></script>
     </body>
 </html>
